@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tn.esprit.twin3.entities.Bloc;
 import tn.esprit.twin3.respositories.BlocRepository;
+import tn.esprit.twin3.respositories.ChambreRepository;
 
 import java.util.List;
 
@@ -13,6 +14,8 @@ import java.util.List;
 public class BlocService implements IBlocService{
 
     private BlocRepository repo;
+    private ChambreRepository chambreRepository;
+
     @Override
     public List<Bloc> retrieveBlocs() {
         return (repo.findAll().isEmpty()) ? null : repo.findAll();

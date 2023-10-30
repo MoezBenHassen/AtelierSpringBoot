@@ -1,5 +1,6 @@
 package tn.esprit.twin3.services;
 
+import tn.esprit.twin3.entities.Bloc;
 import tn.esprit.twin3.entities.Chambre;
 
 import java.sql.Date;
@@ -11,4 +12,5 @@ public interface IChambreService {
     Chambre updateChambre (Chambre c);
     Chambre retrieveChambre (long idChambre);
     List<Chambre> getChambreByReservationAnneUniversitaire(Date debut, Date fin);
+
 }

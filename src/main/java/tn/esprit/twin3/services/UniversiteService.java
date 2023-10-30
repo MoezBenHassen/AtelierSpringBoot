@@ -27,7 +27,6 @@ public class UniversiteService implements IUniversiteService{
     public Universite updateUniversity(Universite u) {
         return repo.save(u);
     }
-
     @Override
     public Universite retrieveUniversity(long idUniversity) {
         return repo.findById(idUniversity).orElse(null);

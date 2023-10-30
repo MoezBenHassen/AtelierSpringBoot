@@ -37,4 +37,6 @@ public class BlocEndpoint {
     public void deleteBloc(@PathVariable long id){
         service.removeBloc(id);
     }
+
+
 }
